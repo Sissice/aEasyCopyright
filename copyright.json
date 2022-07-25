@@ -1,0 +1,624 @@
+[
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "uid",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "add",
+        "type": "address"
+      }
+    ],
+    "name": "addUser",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataFinger",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Category",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.CreateType",
+            "name": "createType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightObtainType",
+            "name": "rightObtainType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightOwnType",
+            "name": "rightOwnType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.AuthorType",
+            "name": "authorType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "authorName",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "completionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "workUrl",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "copyrightOffice",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.IsStatus",
+            "name": "isStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "extendField",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct copyright.Copyright",
+        "name": "copyright",
+        "type": "tuple"
+      },
+      {
+        "internalType": "string",
+        "name": "Uid",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "sign",
+        "type": "bytes"
+      }
+    ],
+    "name": "copyrightAdd",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataFinger",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Category",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.CreateType",
+            "name": "createType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightObtainType",
+            "name": "rightObtainType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightOwnType",
+            "name": "rightOwnType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.AuthorType",
+            "name": "authorType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "authorName",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "completionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "workUrl",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "copyrightOffice",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.IsStatus",
+            "name": "isStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "extendField",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct copyright.Copyright",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataFinger",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Category",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.CreateType",
+            "name": "createType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightObtainType",
+            "name": "rightObtainType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightOwnType",
+            "name": "rightOwnType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.AuthorType",
+            "name": "authorType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "authorName",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "completionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "workUrl",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "copyrightOffice",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.IsStatus",
+            "name": "isStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "extendField",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct copyright.Copyright",
+        "name": "copyright",
+        "type": "tuple"
+      },
+      {
+        "internalType": "string",
+        "name": "Uid",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "sign",
+        "type": "bytes"
+      }
+    ],
+    "name": "copyrightUpdate",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataFinger",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Category",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.CreateType",
+            "name": "createType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightObtainType",
+            "name": "rightObtainType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightOwnType",
+            "name": "rightOwnType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.AuthorType",
+            "name": "authorType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "authorName",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "completionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "workUrl",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "copyrightOffice",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.IsStatus",
+            "name": "isStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "extendField",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct copyright.Copyright",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "key",
+        "type": "string"
+      }
+    ],
+    "name": "copyrightQuery",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataFinger",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Category",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.CreateType",
+            "name": "createType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightObtainType",
+            "name": "rightObtainType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightOwnType",
+            "name": "rightOwnType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.AuthorType",
+            "name": "authorType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "authorName",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "completionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "workUrl",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "copyrightOffice",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.IsStatus",
+            "name": "isStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "extendField",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct copyright.Copyright",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "key",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataFinger",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Category",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.CreateType",
+            "name": "createType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightObtainType",
+            "name": "rightObtainType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.RightOwnType",
+            "name": "rightOwnType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum copyright.AuthorType",
+            "name": "authorType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "authorName",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "completionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "workUrl",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "copyrightOffice",
+            "type": "string"
+          },
+          {
+            "internalType": "enum copyright.IsStatus",
+            "name": "isStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string",
+            "name": "extendField",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct copyright.Copyright",
+        "name": "copyright",
+        "type": "tuple"
+      }
+    ],
+    "name": "getTheSigndata",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
