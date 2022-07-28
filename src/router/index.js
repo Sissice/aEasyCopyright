@@ -1,7 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/Home.vue'
+import WelcomeView from '../views/Welcome.vue'
 import CopyrightAddView from '../components/CopyrightAdd.vue'
-import CasinoDapp from '../components/casino-dapp.vue'
+import CopyrightQueryView from '../components/CopyrightQuery.vue'
+import CopyrightUpdateView from '../components/CopyrightUpdate.vue'
+import DataFingerView from '../components/DataFinger.vue'
+import UserAdminView from '../components/UserAdmin.vue'
 
 const routes = [
   // {
@@ -21,19 +25,41 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-    redirect: '/CopyrightAdd',
+    redirect: '/welcome',
     children: [
-      { path: '/CopyrightAdd', component: CopyrightAddView }
+      { path: '/welcome', component: WelcomeView },
+      {
+    path: '/copyright/add',
+    name: 'copyrightadd',
+    component: CopyrightAddView
+  },
+  {
+    path: '/copyright/query',
+    name: 'copyrightquery',
+    component: CopyrightQueryView
+  },
+  {
+    path: '/copyright/update',
+    name: 'copyrightupdate',
+    component: CopyrightUpdateView
+  },
+  {
+    path: '/other/datafinger',
+    name: 'datafinger',
+    component: DataFingerView
+  },
+  {
+    path: '/user/admin',
+    name: 'admin',
+    component: UserAdminView
+  },
     ]
   }
-  // {
-  //   path: '/',
-  //   name: 'casino-dapp',
-  //   component: CasinoDapp
-  // }
+  
 ]
 
 const router = createRouter({
+  // mode: 'history',
   history: createWebHashHistory(),
   routes
 })

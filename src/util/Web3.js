@@ -5,9 +5,9 @@ const address = '0x80ec8696D724686adCC88fFF14Bde24A4d0e38De'
 const privateKey = 'ce4bd15a4c479a148c701b6e4019f39b23bf90b9803ef8d441e691f66ce0ae05'
 const web3 = new Web3(new Web3.providers.HttpProvider('https://matic-mumbai.chainstacklabs.com'))
 
-const path = require('path')
-const fs = require('fs')
-const crypto = require('crypto')
+// const path = require('path')
+// const fs = require('fs')
+// const crypto = require('crypto')
 
 // 添加账户
 web3.eth.accounts.wallet.add(privateKey)
@@ -29,7 +29,7 @@ const copyright = new web3.eth.Contract(ABI, contractAddress)// 新的api
 if (!copyright) {
   console.log('no contract instance build')
 }
-
+/*
 async function md5DataFinger(fileName) {
   const stream = fs.createReadStream(path.join(__dirname, fileName))
   const buffer = fs.readFileSync(path.join(__dirname, fileName))
@@ -48,6 +48,7 @@ async function md5DataFinger(fileName) {
   console.log('dataFinger =', md5)
   return md5
 }
+*/
 
 // 版权存证号。规则为uid+当前时间戳+4位随机数
 function setKey(uid) {
@@ -127,7 +128,8 @@ async function updateCopyright(data, uid) {
 async function main() {
   const uid1 = uuid()
   console.log('uid =', uid1)
-  const dataFinger = await md5DataFinger('1.txt')
+  // const dataFinger = await md5DataFinger('1.txt')
+  const dataFinger = '123456'
   const key = setKey(uid1)
   const data = [key, 'a', dataFinger, 1, 1, 1, 1, 1, 'Alice', '0x086816ED0dF2B68e292fcD67B852dd97B92f059D', 1, 'http', 1, 'office', 1, 'more']
   await query(key)
@@ -138,13 +140,6 @@ async function main() {
   await query(key)
 }
 
-// main()
-
-// key: 'c4e38a5416583001998553590'
-// dataFinger: 'db1a1e9dd00f696b90fa3b2125d48b40'
-// uid:c4e38a54
-
-// query('123')
-// console.log(typeof(["123","a","124",2,1,1,1,1,"Alice",'0x086816ED0dF2B68e292fcD67B852dd97B92f059D',1,"http",1,"office",1,"more"]))
-
-getsign(["123123","a","1245",2,1,1,1,1,"Alice",'0x086816ED0dF2B68e292fcD67B852dd97B92f059D',1,"http",1,"office",1,"more"])
+// module.exports = {
+//   copyrightAddjs
+// }

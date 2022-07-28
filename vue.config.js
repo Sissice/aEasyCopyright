@@ -19,8 +19,20 @@ module.exports = {
         resolvers: [ElementPlusResolver()]
       }),
       new NodePolyfillPlugin()
-    ]
-  }
+    ],
+    // externals: {
+    //   fs: require('fs')
+    //  }
+    // resolve: {
+    //   fallback:{
+    //     fs: false
+    //   }
+    // },
+    // externals: {
+    //   './cptable': 'var cptable',
+    // },
+  },
+  
   // defineConfig:{
   //     transpileDependencies: true
   //   })

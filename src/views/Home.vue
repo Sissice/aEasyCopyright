@@ -4,15 +4,15 @@
       <el-header class="header">Header</el-header>
       <el-container>
         <el-aside width="18%" class="aside">
-          <el-menu>
-            <el-submenu index="1">
+          <el-menu :router='true'>
+            <el-submenu index="/copyright">
               <template #title>
                 <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <span>版权服务</span>
               </template>
-              <el-menu-item index="1-1">菜单1</el-menu-item>
-              <el-menu-item index="1-2">菜单2</el-menu-item>
-              <el-menu-item index="1-3">菜单3</el-menu-item>
+              <el-menu-item index="/copyright/add">版权存证</el-menu-item>
+              <el-menu-item index="/copyright/update">版权更新</el-menu-item>
+              <el-menu-item index="/copyright/query">版权查询</el-menu-item>
             </el-submenu>
             <el-submenu index="2">
               <template #title>
@@ -20,11 +20,19 @@
                 <span>导航二</span>
               </template>
             </el-submenu>
-            <el-submenu index="3">
+            <el-submenu index="/other">
               <template #title>
                 <i class="el-icon-location"></i>
-                <span>导航三</span>
+                <span>其他服务</span>
               </template>
+              <el-menu-item index="/other/datafinger">文件指纹</el-menu-item>
+            </el-submenu>
+            <el-submenu index="/user">
+              <template #title>
+                <i class="el-icon-location"></i>
+                <span>用户中心</span>
+              </template>
+              <el-menu-item index="/user/admin">管理中心</el-menu-item>
             </el-submenu>
           </el-menu>
         </el-aside>
